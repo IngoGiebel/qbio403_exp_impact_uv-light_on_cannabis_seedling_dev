@@ -1,0 +1,96 @@
+\documentclass[
+11pt,
+fleqn,
+titlepage]{article}
+
+% Packages
+
+\usepackage[sfdefault]{roboto}
+\usepackage{authblk}
+\usepackage[a4paper, headheight=14pt]{geometry}
+\usepackage[document]{ragged2e}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[section]{placeins}
+\usepackage{siunitx}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage[babel, tracking, verbose]{microtype}
+\usepackage[defaultlines=2, all]{nowidow}
+\usepackage{subcaption}
+\captionsetup{
+    labelfont=bf,
+    singlelinecheck=false,
+    justification=RaggedRight}
+\captionsetup[subfigure]{
+    labelformat=brace}
+\renewcommand\thesubfigure{\roman{subfigure}}
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\usepackage{csquotes}
+\usepackage[style=apa]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{soul}
+\usepackage[labelfont=bf]{caption}
+\usepackage{tabularx}
+\usepackage{threeparttablex}
+\usepackage[imakeidx]{xindex}
+\makeindex[intoc=true]
+\usepackage[pdfa]{hyperref}
+\usepackage{colorprofiles}
+\hypersetup{
+    pdfinfo={
+        Title={Impact of UV light on Cannabis seedling development},
+        Author={Ingo Giebel},
+        Subject={Experiment QBio403: Developmental Biology},
+        Keywords={Heinrich-Heine-Universität Düsseldorf, SS 2024, QBio403: Developmental Biology, Lab report, UV light, seedling development, Cannabis sativa L., Instructor: Prof. Dr. Guido Grossmann}},
+        colorlinks,
+        linkcolor=blue,
+        linktoc=all}
+\usepackage[ocgcolorlinks, tikz]{ocgx2}
+\usepackage{biocon}
+\newplant{Cs}{genus=Cannabis, epithet=sativa, author=L.}
+\sloppy
+
+% Header
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Impact of UV light on \plant[g]{Cs} seedling development}
+\fancyhead[R]{\thepage}
+\fancypagestyle{plain}{}
+
+% Title & author
+
+\title{Impact of UV light on \plant[g]{Cs} seedling development}
+\author{Ingo Giebel}
+\affil{QBio403: Developmental Biology}
+\affil{Heinrich-Heine-Universität Düsseldorf}
+\affil{Prof. Dr. Guido Grossmann}
+\date{June 17, 2024}
+
+\begin{document}
+    \maketitle
+
+    \tableofcontents
+
+    \renewcommand*\listfigurename{List of figures}
+    \listoffigures
+
+    \clearpage
+
+    \input{introduction}
+
+    \input{materials_and_methods}
+
+    \input{results}
+
+    \input{discussion}
+
+    \clearpage
+    \printbibliography[heading=bibintoc]
+
+    \printindex
+\end{document}
