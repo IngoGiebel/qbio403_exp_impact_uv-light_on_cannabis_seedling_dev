@@ -17,6 +17,9 @@ titlepage]{article}
 \usepackage[version=4]{mhchem}
 \usepackage[babel, tracking, verbose]{microtype}
 \usepackage[defaultlines=2, all]{nowidow}
+\usepackage{array}
+\setlength{\extrarowheight}{1.2pt}
+\usepackage{bigstrut}
 \usepackage{subcaption}
 \captionsetup{
     labelfont=bf,
@@ -27,8 +30,9 @@ titlepage]{article}
 \renewcommand\thesubfigure{\roman{subfigure}}
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=american]{english}
+\usepackage[useregional]{datetime2}
 \usepackage{csquotes}
-\usepackage[style=apa]{biblatex}
+\usepackage[backend=biber, style=apa]{biblatex}
 \addbibresource{bibliography.bib}
 \usepackage{fancyhdr}
 \usepackage{booktabs}
@@ -37,7 +41,7 @@ titlepage]{article}
 \usepackage{tabularx}
 \usepackage{threeparttablex}
 \usepackage[imakeidx]{xindex}
-\makeindex[intoc=true]
+\makeindex[intoc]
 \usepackage[pdfa]{hyperref}
 \usepackage{colorprofiles}
 \hypersetup{
@@ -69,13 +73,22 @@ titlepage]{article}
 \affil{QBio403: Developmental Biology}
 \affil{Heinrich-Heine-Universität Düsseldorf}
 \affil{Prof. Dr. Guido Grossmann}
-\date{June 17, 2024}
+\date{\DTMdate{2024-06-19}}
+
 
 \begin{document}
+    \DTMsavedate{exp-start}{2024-05-02}
+    \DTMsavedate{exp-repotting}{2024-05-13}
+    \DTMsavedate{exp-end}{2024-06-16}
+
     \maketitle
 
     \tableofcontents
 
+    \clearpage
+
+    \renewcommand*\listtablename{List of tables}
+    \listoftables
     \renewcommand*\listfigurename{List of figures}
     \listoffigures
 
@@ -90,7 +103,10 @@ titlepage]{article}
     \input{discussion}
 
     \clearpage
+
     \printbibliography[heading=bibintoc]
+
+    \clearpage
 
     \printindex
 \end{document}
