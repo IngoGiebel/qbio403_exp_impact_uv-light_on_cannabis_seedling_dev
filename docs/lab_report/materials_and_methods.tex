@@ -5,7 +5,6 @@
 Table \ref{tab:materials} summarizes the materials used in this experiment. Figures \ref{fig:cannabis_passion-no1}, \ref{fig:cannabis_skywalker-haze}, and \ref{fig:cannabis_frisian-dew} show the cannabis cultivars used in this experiment, figure \ref{fig:planting-containers} the planting containers, and figures \ref{fig:led_grow_light} and \ref{fig:uv_grow_light} the LED and UV grow lights.
 
 \begin{table}[htbp]
-    \centering
     \caption{Summary of materials used in the experiment}
     \label{tab:materials}
     \begin{tabularx}{\linewidth}{l|X}
@@ -22,7 +21,7 @@ Table \ref{tab:materials} summarizes the materials used in this experiment. Figu
         Potting soil\index{potting soil} & Lightly fertilized organic coconut potting soil with added mycorrhizae\index{mycorrhizae} (for seeds) \\
         & Fertilized organic coconut potting soil (for potting up) \\
         \bigstrut
-        Grow lights\index{grow light!LED} & PHLIZON FD6000 PLUS 640W Full-spectrum Daisy Chain Dimmable LED Grow Light\index{grow light!LED!PHLIZON FD6000 PLUS 640W Full-spectrum} \\
+        LED Grow lights\index{grow light!LED} & PHLIZON FD6000 PLUS 640W Full-spectrum Daisy Chain Dimmable LED Grow Light\index{grow light!LED!PHLIZON FD6000 PLUS 640W Full-spectrum} \\
         & \quad Wattage: \qty[mode=text]{640}{\W} \\
         & \quad Color temperature/wavelengths: Full-spectrum \\
         & \quad LED distribution: \\
@@ -136,6 +135,51 @@ On June 16, after \num[mode=text]{45} days of growth for the first set of plants
 \end{itemize}
 
 Additionally, light conditions were measured using a THORLABS CCS200/M light spectrometer\index{light spectrometer!THORLABS CCS200/M}.
+
+Figure \ref{fig:process_chain} outlines the sequence of experimental procedures.
+
+\begin{figure}[htbp]
+    \begin{tikzpicture}[node distance=2.75cm, auto]
+        % Define styles
+        \tikzstyle{box} = [rectangle, draw, fill=pink!40, text width=8em, text centered, rounded corners, minimum height=4em]
+        \tikzstyle{line} = [draw, -latex]
+
+        % Nodes
+        \node [box] (start) {Start: May 2};
+
+        \node [box, below of=start, node distance=2.75cm] (group1_start) {Group 1 (Control): LED lights only};
+        \node [box, right of=group1_start, node distance=10cm] (group2_start) {Group 2: LED + UV lights};
+
+        \node [box, below of=group1_start, node distance=2.75cm] (seed_g1) {Plant 5 seeds of Passion \#1 (feminized) and 1 seed of Skywalker Haze (feminized)};
+        \node [box, below of=group2_start, node distance=2.75cm] (seed_g2) {Plant 5 seeds of Passion \#1 (feminized) and 1 seed of Skywalker Haze (feminized)};
+
+        \node [box, below of=seed_g1, node distance=2.75cm] (transplant_g1) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
+        \node [box, below of=seed_g2, node distance=2.75cm] (transplant_g2) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
+
+        \node [box, below of=transplant_g1, node distance=2.25cm] (frisian_g1) {Plant 5 seeds of Frisian Dew (regular) on May 13};
+        \node [box, below of=transplant_g2, node distance=2.25cm] (frisian_g2) {Plant 5 seeds of Frisian Dew (regular) on May 13};
+
+        \node [box, ultra thick, below of=frisian_g1, node distance=2.75cm] (assess) {Assess growth parameters on June 16};
+
+        % Lines
+        \path [line] (start) -- (group1_start);
+        \path [line] (start) -- (group2_start);
+
+        \path [line] (group1_start) -- (seed_g1);
+        \path [line] (group2_start) -- (seed_g2);
+
+        \path [line] (seed_g1) -- (transplant_g1);
+        \path [line] (seed_g2) -- (transplant_g2);
+
+        \path [line] (transplant_g1) -- (frisian_g1);
+        \path [line] (transplant_g2) -- (frisian_g2);
+
+        \path [line] (frisian_g1) -- (assess);
+        \path [line] (frisian_g2) -- (assess);
+    \end{tikzpicture}
+    \caption[Sequence of experimental procedures]{Sequence of experimental procedures. Assessments include: Plant height, stem diameter, and number of internodes.}
+    \label{fig:process_chain}
+\end{figure}
 
 \subsection{Growing conditions}
 
