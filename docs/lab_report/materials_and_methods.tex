@@ -2,7 +2,7 @@
 
 \subsection{Materials}
 
-Table \ref{tab:materials} summarizes the materials used in this experiment. Figures \ref{fig:cannabis_passion-no1}, \ref{fig:cannabis_skywalker-haze}, and \ref{fig:cannabis_frisian-dew} show the cannabis cultivars used in this experiment, figure \ref{fig:planting-containers} the planting containers, and figures \ref{fig:led_grow_light} and \ref{fig:uv_grow_light} the LED and UV grow lights.
+Table \ref{tab:materials} summarizes the materials used in this experiment. Figures \ref{fig:cannabis_skywalker-haze} and \ref{fig:cannabis_frisian-dew} show the cannabis cultivars used in this experiment, figure \ref{fig:planting-containers} the planting containers, and figures \ref{fig:led_grow_light} and \ref{fig:uv_grow_light} the LED and UV grow lights.
 
 \begin{table}[htbp]
     \caption{Summary of materials used in the experiment}
@@ -11,9 +11,8 @@ Table \ref{tab:materials} summarizes the materials used in this experiment. Figu
         \toprule
         \textbf{Item} & \textbf{Description} \\
         \midrule
-        Seeds\index{seeds!cannabis} & 10 seeds of DUTCH PASSION Passion \#1\index{seeds!cannabis!Passion \#1} (feminized) \\
-        & 2 seeds of DUTCH PASSION Skywalker Haze\index{seeds!cannabis!Skywalker Haze} (feminized) \\
-        & 10 seeds of DUTCH PASSION Frisian Dew seeds\index{seeds!cannabis!Frisian Dew} (regular) \\
+        Seeds\index{seeds!cannabis} & 2 seeds of DUTCH PASSION Skywalker Haze\index{seeds!cannabis!Skywalker Haze} (feminized) \\
+        & 10 seeds of DUTCH PASSION Frisian Dew seeds\index{seeds!cannabis!Frisian Dew} (feminized) \\
         \bigstrut
         Planting containers\index{planting container} & \qty[mode=text]{3}{\L} fabric planting containers from Chiliwelten with zipper \\
         & \qty[mode=text]{15}{\L} fabric planting containers from Chiliwelten with zipper \\
@@ -40,19 +39,6 @@ Table \ref{tab:materials} summarizes the materials used in this experiment. Figu
         \bottomrule
     \end{tabularx}
 \end{table}
-
-\begin{figure}[htbp]
-    \begin{subfigure}[t]{.48\textwidth}
-        \includegraphics[width=\linewidth]{DUTCH-PASSION_Passion-No1_1}
-        \label{fig:cannabis_passion-no1_1}
-    \end{subfigure}
-    \begin{subfigure}[t]{.48\textwidth}
-        \includegraphics[width=\linewidth]{DUTCH-PASSION_Passion-No1_2}
-        \label{fig:cannabis_passion-no1_2}
-    \end{subfigure}
-    \caption[DUTCH PASSION Passion \#1]{DUTCH PASSION Passion \#1 cultivar. From: \fullcite{noauthor_dutch-passion_passion-no-1_nodate}}
-    \label{fig:cannabis_passion-no1}
-\end{figure}
 
 \begin{figure}[htbp]
     \begin{subfigure}[t]{.48\textwidth}
@@ -123,15 +109,15 @@ Table \ref{tab:materials} summarizes the materials used in this experiment. Figu
 
 \subsection{Experimental procedure}
 
-On May 2, ten seeds of DUTCH PASSION Passion \#1 (feminized) and two seeds of DUTCH PASSION Skywalker Haze (feminized) were planted in \qty[mode=text]{3}{\L} fabric planting containers filled with lightly fertilized organic coconut potting soil with added mycorrhizae. The seeds were germinated and initially grown under full-spectrum LED lights (PHLIZON FD6000 PLUS 640W). The plants were divided into two groups, with one group receiving additional light from four LuxElite PlantUV grow lights.
+On May 2, two seeds of DUTCH PASSION Skywalker Haze (feminized) and ten seeds of DUTCH PASSION Frisian Dew (feminized) and  were planted in \qty[mode=text]{3}{\L} fabric planting containers filled with lightly fertilized organic coconut potting soil with added mycorrhizae. The seeds were germinated and initially grown under full-spectrum LED lights (PHLIZON FD6000 PLUS 640W). The plants were divided into two groups, with one group receiving additional light from four LuxElite PlantUV grow lights.
 
-On May 13, these plants were transplanted into \qty[mode=text]{15}{\L} fabric planting containers with fertilized organic coconut potting soil. Additionally, ten seeds of DUTCH PASSION Frisian Dew (regular) were planted in \qty[mode=text]{3}{\L} fabric planting containers under the same conditions. Again, the plants were divided into two groups, with half of the plants receiving supplementary UV light.
+On May 13, these plants were transplanted into \qty[mode=text]{15}{\L} fabric planting containers with fertilized organic coconut potting soil.
 
-On June 16, after \num[mode=text]{45} days of growth for the first set of plants and \num[mode=text]{34} days for the second set, the plants were assessed for the following growth parameters:
+On June 17, after \num[mode=text]{46} days of growth, the plants were assessed for the following growth parameters:
 \begin{itemize}
     \item Plant height\index{growth parameter!plant height}: Measured from the base of the stem to the highest point using a ruler.
-    \item Stem diameter\index{growth parameter!stem diameter}: Measured \qty[mode=text]{2}{\cm} above the soil line using a caliper.
-    \item Number of internodes\index{growth parameter!number of internodes}: Counted from the base to the top of the plant.
+    \item Stem circumference\index{growth parameter!stem circumference}: Measured directly under the first stem node.
+    \item Number of internodes\index{growth parameter!number of internodes}: Counted from the base to the topmost stem node.
 \end{itemize}
 
 Additionally, light conditions were measured using a THORLABS CCS200/M light spectrometer\index{light spectrometer!THORLABS CCS200/M}.
@@ -141,46 +127,42 @@ Figure \ref{fig:process_chain} outlines the sequence of experimental procedures.
 \begin{figure}[htbp]
     \begin{tikzpicture}[node distance=2.75cm, auto]
         % Define styles
-        \tikzstyle{box} = [rectangle, draw, fill=pink!40, text width=8em, text centered, rounded corners, minimum height=4em]
+        \tikzstyle{box_all_groups} = [rectangle, draw, fill=gray!40, text width=8em, text centered, rounded corners, minimum height=4em]
+        \tikzstyle{box_ctrl_group} = [rectangle, draw, fill=green!40, text width=8em, text centered, rounded corners, minimum height=4em]
+        \tikzstyle{box_exp_group} = [rectangle, draw, fill=pink!40, text width=8em, text centered, rounded corners, minimum height=4em]
         \tikzstyle{line} = [draw, -latex]
 
         % Nodes
-        \node [box] (start) {Start: May 2};
+        \node [box_all_groups] (start) {Start: May 2};
 
-        \node [box, below of=start, node distance=2.75cm] (group1_start) {Group 1 (Control): LED lights only};
-        \node [box, right of=group1_start, node distance=10cm] (group2_start) {Group 2: LED + UV lights};
+        \node [box_ctrl_group, below of=start, node distance=2.75cm] (ctrl_group_start) {Group 1 (Control): LED lights only};
+        \node [box_exp_group, right of=ctrl_group_start, node distance=5cm] (exp_group_start) {Group 2: LED + UV lights};
 
-        \node [box, below of=group1_start, node distance=2.75cm] (seed_g1) {Plant 5 seeds of Passion \#1 (feminized) and 1 seed of Skywalker Haze (feminized)};
-        \node [box, below of=group2_start, node distance=2.75cm] (seed_g2) {Plant 5 seeds of Passion \#1 (feminized) and 1 seed of Skywalker Haze (feminized)};
+        \node [box_ctrl_group, below of=ctrl_group_start, node distance=2.75cm] (ctrl_group_seed) {Plant  1 seed of Skywalker Haze (feminized) and 5 seeds of Frisian Dew (feminized)};
+        \node [box_exp_group, below of=exp_group_start, node distance=2.75cm] (exp_group_seed) {Plant  1 seed of Skywalker Haze (feminized) and 5 seeds of Frisian Dew (feminized)};
 
-        \node [box, below of=seed_g1, node distance=2.75cm] (transplant_g1) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
-        \node [box, below of=seed_g2, node distance=2.75cm] (transplant_g2) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
+        \node [box_ctrl_group, below of=ctrl_group_seed, node distance=2.75cm] (ctrl_group_transplant) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
+        \node [box_exp_group, below of=exp_group_seed, node distance=2.75cm] (exp_group_transplant) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
 
-        \node [box, below of=transplant_g1, node distance=2.25cm] (frisian_g1) {Plant 5 seeds of Frisian Dew (regular) on May 13};
-        \node [box, below of=transplant_g2, node distance=2.25cm] (frisian_g2) {Plant 5 seeds of Frisian Dew (regular) on May 13};
-
-        \node [box, ultra thick, below of=frisian_g1, node distance=2.75cm] (assess) {Assess growth parameters on June 16};
+        \node [box_all_groups, ultra thick, below of=ctrl_group_transplant, node distance=2.25cm] (assess) {Assess growth parameters on June 17};
 
         % Lines
-        \path [line] (start) -- (group1_start);
-        \path [line] (start) -- (group2_start);
+        \path [line] (start) -- (ctrl_group_start);
+        \path [line] (start) -- (exp_group_start);
 
-        \path [line] (group1_start) -- (seed_g1);
-        \path [line] (group2_start) -- (seed_g2);
+        \path [line] (ctrl_group_start) -- (ctrl_group_seed);
+        \path [line] (exp_group_start) -- (exp_group_seed);
 
-        \path [line] (seed_g1) -- (transplant_g1);
-        \path [line] (seed_g2) -- (transplant_g2);
+        \path [line] (ctrl_group_seed) -- (ctrl_group_transplant);
+        \path [line] (exp_group_seed) -- (exp_group_transplant);
 
-        \path [line] (transplant_g1) -- (frisian_g1);
-        \path [line] (transplant_g2) -- (frisian_g2);
-
-        \path [line] (frisian_g1) -- (assess);
-        \path [line] (frisian_g2) -- (assess);
+        \path [line] (ctrl_group_transplant) -- (assess);
+        \path [line] (exp_group_transplant) -- (assess);
     \end{tikzpicture}
-    \caption[Sequence of experimental procedures]{Sequence of experimental procedures. Assessments include: Plant height, stem diameter, and number of internodes.}
+    \caption[Sequence of experimental procedures]{Sequence of experimental procedures. Assessments include: Plant height, stem circumference, and number of internodes.}
     \label{fig:process_chain}
 \end{figure}
 
 \subsection{Growing conditions}
 
-The temperature\index{growing condition!temperature} was maintained at about \qty[mode=text]{21}{\degreeCelsius}. The height of the grow lights\index{grow light} was adjusted to maintain a distance of approximately \qty[mode=text]{20}{\cm} from the tip of the tallest plant. The LED grow lights\index{grow light!LED} were set to \qty[mode=text]{100}{\percent} dimmable intensity. All lights were on daily from 5:35 a.m. to 9:35 p.m. (\qty[mode=text]{16}{hr} daily). On June 16, the local sunrise was at 5:18 a.m. and the sunset was at 9:52 p.m.
+The temperature\index{growing condition!temperature} was maintained at about \qty[mode=text]{21}{\degreeCelsius}. The height of the grow lights\index{grow light} was adjusted to maintain a distance of approximately \qty[mode=text]{20}{\cm} from the tip of the tallest plant. The LED grow lights\index{grow light!LED} were set to \qty[mode=text]{100}{\percent} dimmable intensity. All lights were on daily from 5:35 a.m. to 9:35 p.m. (\qty[mode=text]{16}{hr} daily). On June 17, the local sunrise was at 5:18 a.m. and the sunset was at 9:52 p.m.

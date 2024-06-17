@@ -3075,13 +3075,12 @@
     <bcf:citekey order="3" intorder="1">eichhorn_bilodeau_update_2019</bcf:citekey>
     <bcf:citekey order="4" intorder="1">eichhorn_bilodeau_update_2019</bcf:citekey>
     <bcf:citekey order="4" intorder="2">lydon_uv-b_1987</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">noauthor_dutch-passion_passion-no-1_nodate</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">noauthor_dutch-passion_skywalker-haze_nodate</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">noauthor_dutch-passion_frisian-dew_nodate</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">noauthor_chiliwelten_3l_nodate</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">noauthor_chiliwelten_15l_nodate</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">noauthor_phlizon_fd6000-640w-upgraded_nodate</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">noauthor_luxelite_plantuv_nodate</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">noauthor_dutch-passion_skywalker-haze_nodate</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">noauthor_dutch-passion_frisian-dew_nodate</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">noauthor_chiliwelten_3l_nodate</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">noauthor_chiliwelten_15l_nodate</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">noauthor_phlizon_fd6000-640w-upgraded_nodate</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">noauthor_luxelite_plantuv_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
