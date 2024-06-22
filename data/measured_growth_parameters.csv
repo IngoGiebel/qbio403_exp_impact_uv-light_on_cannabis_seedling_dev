@@ -1,0 +1,13 @@
+Group,Cultivar,Plant #,Height (cm),Stem cir. (cm),# Internodes
+UV,Skywalker Haze,1,49,4.3,11
+UV,Frisian Dew,3,59,5.5,12
+UV,Frisian Dew,5,56,5.5,12
+UV,Frisian Dew,7,54,5.1,11
+UV,Frisian Dew,9,56,5.5,12
+UV,Frisian Dew,11,52,4.7,12
+Control,Skywalker Haze,2,49,5.0,12
+Control,Frisian Dew,4,,,,
+Control,Frisian Dew,6,49,6.0,13
+Control,Frisian Dew,8,60,5.5,12
+Control,Frisian Dew,10,69,5.0,12
+Control,Frisian Dew,12,52,5.8,12

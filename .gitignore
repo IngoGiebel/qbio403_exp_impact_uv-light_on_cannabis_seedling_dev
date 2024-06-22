@@ -37,3 +37,8 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+.Rproj.user
+
+# R files
+*.RData
+*.Rhistory
