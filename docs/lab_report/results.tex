@@ -60,6 +60,25 @@ Table \ref{tab:descriptive_statistics} provides the mean\index{statistics!mean} 
     \end{tabularx}
 \end{table}
 
+Figure \ref{fig:boxplot_comparisons_growth_parameters} presents boxplot comparisons of the growth parameters for the Frisian Dew cultivars between the UV and control groups. These boxplots illustrate the variability and central tendency for plant height, stem circumference, and number of internodes, providing a visual representation of the differences between the groups.
+
+\begin{figure}[htbp]
+    \begin{subfigure}[t]{.32\textwidth}
+        \includesvg[width=\linewidth]{../../results/boxplot_height_comparison}
+        \label{fig:boxplot_comparison_height}
+    \end{subfigure}
+    \begin{subfigure}[t]{.32\textwidth}
+        \includesvg[width=\linewidth]{../../results/boxplot_stem-circumference_comparison}
+        \label{fig:boxplot_comparison_stem-circumference}
+    \end{subfigure}
+    \begin{subfigure}[t]{.32\textwidth}
+        \includesvg[width=\linewidth]{../../results/boxplot_no-internodes_comparison}
+        \label{fig:boxplot_comparison_no-internodes}
+    \end{subfigure}
+    \caption[Comparison of growth parameters for Frisian Dew cultivars]{Boxplot comparisons of plant height, stem circumference, and number of internodes for the Frisian Dew cultivars between the UV and control groups}
+    \label{fig:boxplot_comparisons_growth_parameters}
+\end{figure}
+
 \subsubsection{T-test analysis}
 
 To compare the growth parameters between the UV and control groups for the Frisian Dew cultivar, an independent samples t-test (Welch's t-test\index{statistics!Welch's t-test}) was conducted. This type of t-test is used to determine if there is a statistically significant difference between the means of two groups. The test assumes that the two groups are independent and that the data are approximately normally distributed, without assuming equal variances between groups.

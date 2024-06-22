@@ -45,7 +45,7 @@ ggplot2::ggplot(
 ggplot2::ggsave(
   filename = here::here("results", "boxplot_height_comparison.svg"),
   units = "cm",
-  width = 8,
+  width = 9,
   height = 6
 )
 
@@ -71,7 +71,7 @@ ggplot2::ggplot(
 ggplot2::ggsave(
   filename = here::here("results", "boxplot_stem-circumference_comparison.svg"),
   units = "cm",
-  width = 8,
+  width = 9,
   height = 6
 )
 
@@ -97,7 +97,7 @@ ggplot2::ggplot(
 ggplot2::ggsave(
   filename = here::here("results", "boxplot_no-internodes_comparison.svg"),
   units = "cm",
-  width = 8,
+  width = 9,
   height = 6
 )
 
