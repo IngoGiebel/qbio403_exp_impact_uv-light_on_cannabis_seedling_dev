@@ -30,6 +30,7 @@ titlepage]{article}
 \captionsetup[subfigure]{
     labelformat=brace}
 \renewcommand\thesubfigure{\roman{subfigure}}
+\usepackage{wrapfig2}
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=american]{english}
 \usepackage[useregional]{datetime2}
@@ -77,7 +78,7 @@ titlepage]{article}
 \affil{QBio403: Developmental Biology}
 \affil{Heinrich-Heine-Universität Düsseldorf}
 \affil{Prof. Dr. Guido Grossmann}
-\date{\DTMdate{2024-06-19}}
+\date{\DTMdate{2024-06-24}}
 
 
 \begin{document}
@@ -100,6 +101,7 @@ titlepage]{article}
 
     \input{introduction}
 
+    \newpage
     \input{materials_and_methods}
 
     \input{results}
