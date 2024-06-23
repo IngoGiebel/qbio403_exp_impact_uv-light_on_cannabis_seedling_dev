@@ -2,7 +2,7 @@
 
 \subsection{Materials}
 
-Table \ref{tab:materials} summarizes the materials used in this experiment. Figures \ref{fig:cannabis_skywalker-haze} and \ref{fig:cannabis_frisian-dew} show the cannabis cultivars used in this experiment, figure \ref{fig:planting-containers} the planting containers, and figures \ref{fig:led_grow_light} and \ref{fig:uv_grow_light} the LED and UV grow lights. Figure \ref{fig:spectra_uv_and_ctrl} shows the light spectra of the experimental setups with LED grow lights only (control) and with additional UV fluorescent tubes, measured with the THORLABS CCS200/M light spectrometer.
+Table \ref{tab:materials} summarizes the materials used in this experiment. Figures \ref{fig:cannabis_skywalker-haze} and \ref{fig:cannabis_frisian-dew} show the cannabis cultivars used in this experiment, figure \ref{fig:planting-containers} the planting containers, and figures \ref{fig:led_grow_light} and \ref{fig:uv_grow_light} the LED and UV grow lights. Figure \ref{fig:light-spectra_outdoors_indoors_led_led+uv} shows the measured light spectra for various conditions: outdoors, indoors, LED grow lights only (control), and LED grow lights with additional UV fluorescent tubes. These measurements were conducted at about noon using the THORLABS CCS200/M light spectrometer\index{light spectrometer!THORLABS CCS200/M}.
 
 \begin{table}[htbp]
     \caption{Summary of materials used in the experiment}
@@ -113,9 +113,9 @@ Table \ref{tab:materials} summarizes the materials used in this experiment. Figu
 \end{figure}
 
 \begin{figure}[H]
-    \includegraphics[width=\linewidth]{spectra_uv_and_ctrl}
-    \caption[Light spectra of the experimental setups]{Light spectra of the experimental setups with LED grow lights only (control) and with additional UV fluorescent tubes, measured with the THORLABS CCS200/M light spectrometer\index{light spectrometer!THORLABS CCS200/M}. The green graph represents the spectrum of the control setup, and the black graph represents the spectrum of the UV setup. Differences in the intensities of the two graphs are due to the measurement procedure and do not indicate actual differences in light intensities. The spectra reveal that the intensities of the UV lights are negligible compared to the LED grow lights.}
-    \label{fig:spectra_uv_and_ctrl}
+    \includegraphics[width=\linewidth]{../../data/light-spectra_outdoors_indoors_led_led+uv}
+    \caption[Light spectra of the experimental setups and natural conditions]{Light spectra of the experimental setups with LED grow lights only (control) and with additional UV fluorescent tubes, as well as the spectra measured outdoors and indoors. These measurements were conducted at about noon using the THORLABS CCS200/M light spectrometer\index{light spectrometer!THORLABS CCS200/M}. The dark gray graph represents the outdoor spectrum, the light gray graph represents the indoor spectrum, the orange graph represents the LED-only spectrum, and the red graph represents the LED + UV spectrum. Differences in the intensities of the graphs are due to the measurement procedure and do not indicate actual differences in light intensities. The spectra reveal that the intensities of the UV lights are negligible compared to the LED grow lights.}
+    \label{fig:light-spectra_outdoors_indoors_led_led+uv}
 \end{figure}
 
 \subsection{Experimental procedure}
@@ -126,7 +126,7 @@ On May 13, these plants were transplanted into \qty[mode=text]{15}{\L} fabric pl
 
 On June 17, after \num[mode=text]{46} days of growth, the plants were assessed for the following growth parameters:
 \begin{itemize}
-    \item Plant height\index{growth parameter!plant height}: Measured from the base of the stem to the highest point using a ruler.
+    \item Plant height\index{growth parameter!plant height}: Measured from the base of the stem to the topmost node using a yardstick.
     \item Stem circumference\index{growth parameter!stem circumference}: Measured directly under the first stem node.
     \item Number of internodes\index{growth parameter!number of internodes}: Counted from the base to the topmost stem node.
 \end{itemize}
@@ -136,9 +136,9 @@ Additionally, light conditions were measured using a THORLABS CCS200/M light spe
 Figure \ref{fig:process_chain} outlines the sequence of experimental procedures.
 
 \begin{figure}[H]
-    \begin{tikzpicture}[node distance=2cm]
+    \begin{tikzpicture}[node distance=1.9cm]
         % Define styles
-        \tikzstyle{box_all_groups} = [font=\footnotesize, rectangle, draw, fill=gray!40, text width=12em, text centered, rounded corners, minimum height=4em]
+        \tikzstyle{box_all_groups} = [font=\footnotesize, rectangle, draw, fill=gray!40, text width=12em, text centered, rounded corners, minimum height=3.2em]
         \tikzstyle{box_ctrl_group} = [font=\footnotesize, rectangle, draw, fill=green!40, text width=12em, text centered, rounded corners, minimum height=3.2em]
         \tikzstyle{box_exp_group} = [font=\footnotesize, rectangle, draw, fill=pink!40, text width=12em, text centered, rounded corners, minimum height=3.2em]
         \tikzstyle{line} = [draw, -latex]
@@ -170,7 +170,7 @@ Figure \ref{fig:process_chain} outlines the sequence of experimental procedures.
         \path [line] (ctrl_group_transplant) -- (assess);
         \path [line] (exp_group_transplant) -- (assess);
     \end{tikzpicture}
-    \caption[Sequence of experimental procedures]{Sequence of experimental procedures. Assessments include: Plant height, stem circumference, and number of internodes.}
+    \caption{Sequence of experimental procedures}
     \label{fig:process_chain}
 \end{figure}
 
