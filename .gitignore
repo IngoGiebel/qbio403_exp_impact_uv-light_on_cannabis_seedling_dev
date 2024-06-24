@@ -1,16 +1,18 @@
 # Core latex/pdflatex auxiliary files
+.*.lb
 *.aux
+*.cb
+*.cb2
+*.fls
+*.fmt
+*.fot
 *.lof
 *.log
 *.lot
-*.fls
+*.nav
 *.out
+*.snm
 *.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
-.*.lb
 
 # Intermediate documents
 *.dvi
@@ -20,7 +22,7 @@ svg-inkscape/
 
 # Bibliography auxiliary files (bibtex/biblatex/biber)
 *.bbl
-# *.bcf
+*.bcf
 *.blg
 *-blx.aux
 *-blx.bib
