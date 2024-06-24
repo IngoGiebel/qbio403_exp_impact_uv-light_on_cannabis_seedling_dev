@@ -397,97 +397,115 @@
         \end{figure}
     \end{frame}
 
+    \begin{frame}
+        \frametitle{Measured growth parameters}
+        \footnotesize
+        \begin{table}
+            \begin{tabular}{llcccc}
+                \hline
+                \hline
+                \textbf{Group} & \textbf{Cultivar} & \textbf{Plant \#} & \textbf{Height (\unit[mode=text]{\cm})} & \textbf{Stem cir. (\unit[mode=text]{\cm})} & \textbf{\#{}Internodes} \\
+                \hline
+                \hline
+                \multirow{6}{*}{UV} & Skywalker Haze & 1 & 49 & 4.3 & 11 \\
+                & \multirow[t]{5}{*}{Frisian Dew} & 3 & 59 & 5.5 & 12 \\
+                & & 5 & 56 & 5.5 & 12 \\
+                & & 7 & 54 & 5.1 & 11 \\
+                & & 9 & 56 & 5.5 & 12 \\
+                & & 11 & 52 & 4.7 & 12 \\
+                \hline
+                \multirow{6}{*}{Control} & Skywalker Haze & 2 & 49 & 5.0 & 12 \\
+                & \multirow[t]{5}{*}{Frisian Dew} & 4 & - & - & - \\
+                & & 6 & 49 & 6.0 & 13 \\
+                & & 8 & 60 & 5.5 & 12 \\
+                & & 10 & 69 & 5.0 & 12 \\
+                & & 12 & 52 & 5.8 & 12 \\
+                \hline
+                \hline
+            \end{tabular}
+        \end{table}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Descriptive statistics}
+        \footnotesize
+        \begin{table}
+            \caption{Mean and standard deviation of growth parameters for Frisian Dew cultivar}
+            \begin{tabular}{l|ll|ll|ll}
+                \hline
+                \hline
+                \textbf{Group} & \multicolumn{2}{l|}{\textbf{Height (\unit[mode=text]{\cm})}} & \multicolumn{2}{l|}{\textbf{Stem cir. (\unit[mode=text]{\cm})}} & \multicolumn{2}{l}{\textbf{\# Internodes}} \\
+                & \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} \\
+                \hline
+                \hline
+                UV & \num[mode=text]{55} & \num[mode=text]{2.6} & \num[mode=text]{5.3} & \num[mode=text]{0.36} & \num[mode=text]{12} & \num[mode=text]{0.45} \\
+                Control & \num[mode=text]{58} & \num[mode=text]{9.0} & \num[mode=text]{5.6} & \num[mode=text]{0.43} & \num[mode=text]{12} & \num[mode=text]{0.50} \\
+                \hline
+                \hline
+            \end{tabular}
+        \end{table}
+        \begin{figure}
+            \begin{subfigure}[t]{.32\textwidth}
+                \includesvg[width=\linewidth]{../../results/boxplot_height_comparison}
+            \end{subfigure}
+            \begin{subfigure}[t]{.32\textwidth}
+                \includesvg[width=\linewidth]{../../results/boxplot_stem-circumference_comparison}
+            \end{subfigure}
+            \begin{subfigure}[t]{.32\textwidth}
+                \includesvg[width=\linewidth]{../../results/boxplot_no-internodes_comparison}
+            \end{subfigure}
+            \caption{Boxplot comparisons of plant height, stem circumference, and number of internodes for the Frisian Dew cultivars between the UV and control groups}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Welch's t-test results}
+        \footnotesize
+        \begin{table}
+            \begin{tabular}{lcc}
+                \hline
+                \hline
+                \textbf{Parameter} & \textbf{t-value} & \textbf{p-value} \\
+                \hline
+                \hline
+                Plant height & \num[mode=text]{-0.45} & \num[mode=text]{0.68} \\
+                Stem cir. & \num[mode=text]{-1.17} & \num[mode=text]{0.29} \\
+                \# Internodes & \num[mode=text]{-1.41} & \num[mode=text]{0.21} \\
+                \hline
+                \hline
+            \end{tabular}
+        \end{table}
+        \begin{itemize}
+            \item Only Frisian Dew cultivar due to insufficient sample size for Skywalker Haze
+            \item Welch's t-test for each growth parameter conducted
+            \item Used to determine if there is a statistically significant difference between the means of two group
+            \item Assumes that the groups are stochastically independent
+            \item Data must be approximately normally distributed
+            \item But the variance between the groups can be different
+            \item Result: No significant differences between the UV and control groups for any of the measured growth parameters!
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Discussion}
+        \begin{itemize}
+            \item The UV light exposure did not significantly influence the growth parameters under the experimental conditions.
+            \item Possibly, the UV exposure level was insufficient.
+            \item However, UV light increases the production of secondary metabolites such as cannabinoids and flavonoids.
+            \item Furthermore, acclimating cannabis seedlings to UV light indoors could have benefits for outdoor cultivation.
+            \item Further experiments needed with:
+            \begin{itemize}
+                \item larger sample sizes and different cultivars
+                \item measurements of the cannabinoids and flavonoids contents
+                \item varying intensities of UV light
+                \item additional other environmental factors, such as temperature, pH, nutrients, and humidity
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
 
     \begin{frame}[allowframebreaks]{References}
         \tiny
         \printbibliography
     \end{frame}
-
-    %\begin{frame}
-    %    \frametitle{Results}
-    %    \begin{table}[htbp]
-    %        \caption{Measured growth parameters of the cannabis plants on June 17, \num[mode=text]{46} days after planting the seeds.}
-    %        \label{tab:measured_growth_parameters}
-    %        \begin{tabularx}{\linewidth}{llcccc}
-    %            \toprule
-    %            \textbf{Group} & \textbf{Cultivar} & \textbf{Plant \#} & \textbf{Height (\unit[mode=text]{\cm})} & \textbf{Stem cir. (\unit[mode=text]{\cm})} & \textbf{\#{}Internodes} \\
-    %            \midrule
-    %            \multirow{6}{*}{UV} & Skywalker Haze & 1 & 49 & 4.3 & 11 \\
-    %            & \multirow[t]{5}{*}{Frisian Dew} & 3 & 59 & 5.5 & 12 \\
-    %            & & 5 & 56 & 5.5 & 12 \\
-    %            & & 7 & 54 & 5.1 & 11 \\
-    %            & & 9 & 56 & 5.5 & 12 \\
-    %            & & 11 & 52 & 4.7 & 12 \\
-    %            \midrule
-    %            \multirow{6}{*}{Control} & Skywalker Haze & 2 & 49 & 5.0 & 12 \\
-    %            & \multirow[t]{5}{*}{Frisian Dew} & 4 & - & - & - \\
-    %            & & 6 & 49 & 6.0 & 13 \\
-    %            & & 8 & 60 & 5.5 & 12 \\
-    %            & & 10 & 69 & 5.0 & 12 \\
-    %            & & 12 & 52 & 5.8 & 12 \\
-    %            \bottomrule
-    %        \end{tabularx}
-    %    \end{table}
-    %\end{frame}
-    %
-    %\begin{frame}
-    %    \frametitle{Statistical Analysis}
-    %    \begin{itemize}
-    %        \item Focused on Frisian Dew cultivar due to insufficient sample size for Skywalker Haze.
-    %        \item Conducted descriptive statistics and Welch's t-test for each growth parameter.
-    %    \end{itemize}
-    %    \begin{table}[htbp]
-    %        \caption{Welch's t-test results for growth parameters}
-    %        \label{tab:ttest_results}
-    %        \begin{tabularx}{\linewidth}{lcc}
-    %            \toprule
-    %            \textbf{Parameter} & \textbf{t-value} & \textbf{p-value} \\
-    %            \midrule
-    %            Plant height & \num[mode=text]{-0.45} & \num[mode=text]{0.68} \\
-    %            Stem cir. & \num[mode=text]{-1.17} & \num[mode=text]{0.29} \\
-    %            \# Internodes & \num[mode=text]{-1.41} & \num[mode=text]{0.21} \\
-    %            \bottomrule
-    %        \end{tabularx}
-    %    \end{table}
-    %\end{frame}
-    %
-    %\begin{frame}
-    %    \frametitle{Comparison of Growth Parameters}
-    %    \begin{figure}[htbp]
-    %        \begin{subfigure}[t]{.32\textwidth}
-    %            \includesvg[width=\linewidth]{../../results/boxplot_height_comparison}
-    %            \label{fig:boxplot_height_comparison}
-    %        \end{subfigure}
-    %        \begin{subfigure}[t]{.32\textwidth}
-    %            \includesvg[width=\linewidth]{../../results/boxplot_stem-circumference_comparison}
-    %            \label{fig:boxplot_stem-circumference_comparison}
-    %        \end{subfigure}
-    %        \begin{subfigure}[t]{.32\textwidth}
-    %            \includesvg[width=\linewidth]{../../results/boxplot_no-internodes_comparison}
-    %            \label{fig:boxplot_no-internodes_comparison}
-    %        \end{subfigure}
-    %        \caption[Comparison of the growth parameters]{Comparison of the growth parameters plant height, stem circumference, and number of internodes for the Frisian Dew cultivars between the UV and the control groups.}
-    %        \label{fig:boxplots_growth_parameters_comparisons}
-    %    \end{figure}
-    %\end{frame}
-    %
-    %\begin{frame}
-    %    \frametitle{Discussion}
-    %    \begin{itemize}
-    %        \item No significant differences were found between the UV and control groups for any measured growth parameters.
-    %        \item This suggests that UV light exposure did not significantly influence these parameters under the experimental conditions.
-    %        \item However, UV light has been shown to positively affect cannabinoid content.
-    %        \item Future studies should include larger sample sizes and consider additional parameters such as cannabinoid content.
-    %    \end{itemize}
-    %\end{frame}
-    %
-    %\begin{frame}
-    %    \frametitle{Conclusion}
-    %    \begin{itemize}
-    %        \item UV light did not significantly affect the measured growth parameters.
-    %        \item Further research is needed to explore other potential benefits of UV light exposure.
-    %        \item Understanding these effects can help optimize cultivation practices for cannabis.
-    %    \end{itemize}
-    %\end{frame}
 
 \end{document}
