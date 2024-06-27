@@ -489,31 +489,32 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Welch's t-test results}
-        \footnotesize
-        \begin{table}
-            \begin{tabular}{lcc}
-                \hline
-                \hline
-                \textbf{Parameter} & \textbf{t-value} & \textbf{p-value} \\
-                \hline
-                \hline
-                Plant height & \num[mode=text]{-0.45} & \num[mode=text]{0.68} \\
-                Stem cir. & \num[mode=text]{-1.17} & \num[mode=text]{0.29} \\
-                \# Internodes & \num[mode=text]{-1.41} & \num[mode=text]{0.21} \\
-                \hline
-                \hline
-            \end{tabular}
-        \end{table}
-        \begin{itemize}
-            \item Only Frisian Dew cultivar due to insufficient sample size for Skywalker Haze
-            \item Welch's t-test for each growth parameter conducted
-            \item Used to determine if there is a statistically significant difference between the means of two group
-            \item Assumes that the groups are stochastically independent
-            \item Data must be approximately normally distributed
-            \item But the variance between the groups can be different
-            \item Result: No significant differences between the UV and control groups for any of the measured growth parameters!
-        \end{itemize}
+        \frametitle{Results of the statistical analysis}
+        \begin{footnotesize}
+            \begin{block}{Conducted tests: Welch's t-test for each growth parameter}
+                \begin{itemize}
+                    \item Only Frisian Dew cultivar due to insufficient sample size for Skywalker Haze
+                    \item Used to determine if there is a statistically significant difference between the means of two group
+                    \item Assumes that the groups are stochastically independent
+                    \item Data must be approximately normally distributed
+                    \item But the variance between the groups can be different
+                \end{itemize}
+            \end{block}
+            \begin{block}{Results: no significant differences between the UV and control groups}
+                \begin{tabular}{lcc}
+                    \hline
+                    \hline
+                    \textbf{Parameter} & \textbf{t-value} & \textbf{p-value} \\
+                    \hline
+                    \hline
+                    Plant height & \num[mode=text]{-0.45} & \num[mode=text]{0.68} \\
+                    Stem cir. & \num[mode=text]{-1.17} & \num[mode=text]{0.29} \\
+                    \# Internodes & \num[mode=text]{-1.41} & \num[mode=text]{0.21} \\
+                    \hline
+                    \hline
+                \end{tabular}
+            \end{block}
+        \end{footnotesize}
     \end{frame}
 
     \begin{frame}
