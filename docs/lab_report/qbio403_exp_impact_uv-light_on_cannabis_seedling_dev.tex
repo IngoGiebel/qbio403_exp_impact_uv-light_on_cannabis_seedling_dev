@@ -1,11 +1,15 @@
 \documentclass[
-11pt,
-fleqn,
-titlepage]{article}
+    11pt,
+    fleqn,
+    titlepage,
+    bibliography=../bibliography.bib,
+    link-citations]{article}
 
 % Packages
+\usepackage[tc]{titlepic}
 \usepackage{svg}
 \svgsetup{inkscapelatex=false}
+\graphicspath{{./}{../figures/}{../../data/}}
 \usepackage[sfdefault]{roboto}
 \usepackage{authblk}
 \usepackage[a4paper, headheight=14pt]{geometry}
@@ -34,7 +38,6 @@ titlepage]{article}
 \usepackage[useregional]{datetime2}
 \usepackage{csquotes}
 \usepackage[style=apa]{biblatex}
-\addbibresource{../bibliography.bib}
 \usepackage{fancyhdr}
 \usepackage{booktabs}
 \usepackage{soul}
@@ -58,6 +61,7 @@ titlepage]{article}
         linktoc=all}
 \usepackage{tikz}
 \usepackage[ocgcolorlinks, tikz]{ocgx2}
+\usepackage{qrcode}
 \usepackage{biocon}
 \newplant{Cs}{genus=Cannabis, epithet=sativa, author=L.}
 \sloppy
@@ -79,6 +83,20 @@ titlepage]{article}
 \affil{Prof. Dr. Guido Grossmann}
 \date{\DTMdate{2024-06-24}}
 
+% Links to this presentation and the lab report on GitHub
+\titlepic{
+    \begin{figure}
+        \subcaptionsetup[figure]{labelformat=empty}
+        \begin{subfigure}[t]{.24\textwidth}
+            \qrcode[level=H, height=2cm]{https://github.com/IngoGiebel/qbio403_exp_impact_uv-light_on_cannabis_seedling_dev/blob/trunk/docs/presentations/qbio403_exp_impact_uv-light_on_cannabis_seedling_dev_p.pdf}
+            \subcaption{Presentation on GitHub}
+        \end{subfigure}
+        \begin{subfigure}[t]{.24\textwidth}
+            \qrcode[level=H, height=2cm]{https://github.com/IngoGiebel/qbio403_exp_impact_uv-light_on_cannabis_seedling_dev/blob/trunk/docs/lab_report/qbio403_exp_impact_uv-light_on_cannabis_seedling_dev.pdf}
+            \subcaption{This lab report on GitHub}
+        \end{subfigure}
+    \end{figure}
+}
 
 \begin{document}
     \DTMsavedate{exp-start}{2024-05-02}
