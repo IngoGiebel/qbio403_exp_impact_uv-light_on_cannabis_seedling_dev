@@ -104,7 +104,7 @@ Figures \ref{fig:plants_uv_2024-06-17} and \ref{fig:plants_ctrl_2024-06-17} show
             \subcaption{Plant \#11}
             \label{fig:plant_11_2024-06-17}
         \end{subfigure}
-        \begin{subfigure}[t]{0.99\textwidth}
+        \begin{subfigure}[t]{\textwidth}
             \includegraphics[width=\linewidth]{plant_uv_2024-06-17}
             \subcaption{All plants of the UV group in their experimental setup under the LED \& UV grow lights}
             \label{fig:plant_uv_2024-06-17}
@@ -139,8 +139,9 @@ Figures \ref{fig:plants_uv_2024-06-17} and \ref{fig:plants_ctrl_2024-06-17} show
             \subcaption{Plant \#12}
             \label{fig:plant_12_2024-06-17}
         \end{subfigure}
+        \raggedright
         \begin{subfigure}[t]{\textwidth}
-            \includegraphics[width=0.99\linewidth]{plant_ctrl_2024-06-17}
+            \includegraphics[width=\linewidth]{plant_ctrl_2024-06-17}
             \subcaption{All plants of the control group in their experimental setup under the LED grow lights}
             \label{fig:plant_ctrl_2024-06-17}
         \end{subfigure}
@@ -149,11 +150,11 @@ Figures \ref{fig:plants_uv_2024-06-17} and \ref{fig:plants_ctrl_2024-06-17} show
     \end{minipage}
 \end{figure}
 
-\begin{figure}[H]
-    \includegraphics[width=0.34\linewidth]{plant_all_2024-06-17}
+\begin{SCfigure}[2][!h]
+    \includegraphics[width=0.42\linewidth]{plant_all_2024-06-17}
     \caption[Plants of both the UV and control groups on June 17]{All plants of both the UV and control groups on June 17. The control group plants are arranged on the left, while the UV group plants are on the right.}
     \label{fig:plant_all_2024-06-17}
-\end{figure}
+\end{SCfigure}
 
 \subsection{Measured growth parameters}
 
@@ -162,9 +163,9 @@ Table \ref{tab:measured_growth_parameters} shows the measured growth parameters:
 \begin{table}[H]
     \caption[Measured growth parameters of the cannabis plants]{Measured growth parameters of the cannabis plants on June 17, \num[mode=text]{46} days after planting the seeds.}
     \label{tab:measured_growth_parameters}
-    \begin{tabularx}{\linewidth}{llcccc}
+    \begin{tabular}{llrrrr}
         \toprule
-        \textbf{Group} & \textbf{Cultivar} & \textbf{Plant \#} & \textbf{Height (\unit[mode=text]{\cm})} & \textbf{Stem cir. (\unit[mode=text]{\cm})} & \textbf{\#{}Internodes} \\
+        Group & Cultivar & Plant \# & Height (\unit[mode=text]{\cm}) & Stem cir. (\unit[mode=text]{\cm}) & \#{}Internodes \\
         \midrule
         \multirow{6}{*}{UV} & Skywalker Haze & 1 & 49 & 4.3 & 11 \\
         & \multirow[t]{5}{*}{Frisian Dew} & 3 & 59 & 5.5 & 12 \\
@@ -180,7 +181,7 @@ Table \ref{tab:measured_growth_parameters} shows the measured growth parameters:
         & & 10 & 69 & 5.0 & 12 \\
         & & 12 & 52 & 5.8 & 12 \\
         \bottomrule
-    \end{tabularx}
+    \end{tabular}
 \end{table}
 
 \subsection{Statistical analysis}
@@ -194,15 +195,15 @@ Table \ref{tab:descriptive_statistics} provides the mean\index{statistics!mean} 
 \begin{table}[H]
     \caption[Mean and standard deviation of growth parameters]{Mean and standard deviation of growth parameters for Frisian Dew cultivar}
     \label{tab:descriptive_statistics}
-    \begin{tabularx}{\linewidth}{l|XX|XX|XX}
+    \begin{tabular}{lrrrrrr}
         \toprule
-        \textbf{Group} & \multicolumn{2}{l|}{\textbf{Height (\unit[mode=text]{\cm})}} & \multicolumn{2}{l|}{\textbf{Stem cir. (\unit[mode=text]{\cm})}} & \multicolumn{2}{l}{\textbf{\# Internodes}} \\
-        & \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} \\
+        Group & \multicolumn{2}{l}{Height (\unit[mode=text]{\cm})} & \multicolumn{2}{l}{Stem cir. (\unit[mode=text]{\cm})} & \multicolumn{2}{l}{\# Internodes} \\
+        & Mean & SD & Mean & SD & Mean & SD \\
         \midrule
         UV & \num[mode=text]{55} & \num[mode=text]{2.6} & \num[mode=text]{5.3} & \num[mode=text]{0.36} & \num[mode=text]{12} & \num[mode=text]{0.45} \\
         Control & \num[mode=text]{58} & \num[mode=text]{9.0} & \num[mode=text]{5.6} & \num[mode=text]{0.43} & \num[mode=text]{12} & \num[mode=text]{0.50} \\
         \bottomrule
-    \end{tabularx}
+    \end{tabular}
 \end{table}
 
 Figure \ref{fig:boxplot_comparisons_growth_parameters} presents boxplot comparisons of the growth parameters for the Frisian Dew cultivars between the UV and control groups. These boxplots illustrate the variability and central tendency for plant height, stem circumference, and number of internodes, providing a visual representation of the differences between the groups.
@@ -231,15 +232,15 @@ To compare the growth parameters between the UV and control groups for the Frisi
 \begin{table}[H]
     \caption{Welch's t-test results for growth parameters}
     \label{tab:t-test_results}
-    \begin{tabularx}{\linewidth}{lcc}
+    \begin{tabular}{lrr}
         \toprule
-        \textbf{Parameter} & \textbf{t-value} & \textbf{p-value} \\
+        Parameter & t-value & p-value \\
         \midrule
         Plant height & \num[mode=text]{-0.45} & \num[mode=text]{0.68} \\
         Stem cir. & \num[mode=text]{-1.17} & \num[mode=text]{0.29} \\
         \# Internodes & \num[mode=text]{-1.41} & \num[mode=text]{0.21} \\
         \bottomrule
-    \end{tabularx}
+    \end{tabular}
 \end{table}
 
 These results indicate no significant differences between the UV and control groups for any of the measured growth parameters, suggesting that UV light exposure did not significantly influence these parameters under the conditions of this experiment. Therefore, these findings do not support the hypothesis that UV light enhances germination rate and seedling development through protective and growth-promoting biochemical responses.

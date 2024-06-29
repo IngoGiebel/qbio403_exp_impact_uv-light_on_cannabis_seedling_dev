@@ -1,9 +1,7 @@
 \documentclass[
     11pt,
     fleqn,
-    titlepage,
-    bibliography=../bibliography.bib,
-    link-citations]{article}
+    titlepage]{article}
 
 % Packages
 \usepackage[tc]{titlepic}
@@ -12,7 +10,7 @@
 \graphicspath{{./}{../figures/}{../../data/}}
 \usepackage[sfdefault]{roboto}
 \usepackage{authblk}
-\usepackage[a4paper, headheight=14pt]{geometry}
+\usepackage[a4paper, twoside, headheight=14pt]{geometry}
 \usepackage[document]{ragged2e}
 \usepackage{parskip}
 \usepackage{enumitem}
@@ -24,25 +22,21 @@
 \usepackage[defaultlines=2, all]{nowidow}
 \usepackage{array}
 \setlength{\extrarowheight}{1.2pt}
-\usepackage{bigstrut}
+\usepackage[labelfont=bf, singlelinecheck=false, justification=RaggedRight]{caption}
+\captionsetup[subfigure]{labelformat=brace}
 \usepackage{subcaption}
-\captionsetup{
-    labelfont=bf,
-    singlelinecheck=false,
-    justification=RaggedRight}
-\captionsetup[subfigure]{
-    labelformat=brace}
 \renewcommand\thesubfigure{\roman{subfigure}}
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=american]{english}
 \usepackage[useregional]{datetime2}
 \usepackage{csquotes}
 \usepackage[style=apa]{biblatex}
+\addbibresource{../bibliography.bib}
 \usepackage{fancyhdr}
 \usepackage{booktabs}
 \usepackage{soul}
-\usepackage[labelfont=bf]{caption}
 \usepackage{wrapfig2}
+\usepackage{sidecap}
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{threeparttablex}
