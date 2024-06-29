@@ -1,6 +1,7 @@
 \documentclass[
     12pt,
     aspectratio=1610,
+    b,
     bibliography=../bibliography.bib,
     link-citations]{beamer}
 \usetheme{Moloch}
@@ -12,10 +13,10 @@
 \svgsetup{inkscapelatex=false}
 \usepackage[sfdefault]{roboto}
 \usepackage[document]{ragged2e}
-\usepackage[font=footnotesize, singlelinecheck=false, justification=RaggedRight, labelformat=empty]{caption}
+\usepackage{booktabs}
+\usepackage[singlelinecheck=false, justification=RaggedRight, labelformat=empty]{caption}
 \usepackage[labelformat=empty]{subcaption}
 \usepackage{siunitx}
-\usepackage{bigstrut}
 \usepackage{multirow}
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=american]{english}
@@ -57,11 +58,11 @@
 
     \begin{frame}
         \frametitle{About \plant{Cs}}
-        \begin{columns}[t]
-            \begin{column}[T]{.55\textwidth}
+        \begin{columns}[T]
+            \begin{column}{.55\textwidth}
                 \includegraphics[width=\linewidth]{plant_all_2024-06-17}
             \end{column}
-            \begin{column}[T]{.45\textwidth}
+            \begin{column}{.45\textwidth}
                 \begin{itemize}
                     \item Has significant economic and medicinal interest
                     \item Cultivated for fiber (hemp), seed oil, and pharmacologically active compounds like cannabinoids and terpenes
@@ -77,14 +78,12 @@
 
     \begin{frame}
         \frametitle{The role of light for plants}
-        \begin{columns}[t]
-            \begin{column}[T]{.55\textwidth}
-                \begin{figure}
-                    \includegraphics[width=\linewidth]{jeremy-bishop-EdSdhvPX36M-unsplash}
-                    \caption{Sunrise. From: \textcite{bishop_foto_2017}}
-                \end{figure}
+        \begin{columns}[T]
+            \begin{column}{.55\textwidth}
+                \includegraphics[width=\linewidth]{jeremy-bishop-EdSdhvPX36M-unsplash}
+                \captionof{figure}{Sunrise. From: \textcite{bishop_foto_2017}}
             \end{column}
-            \begin{column}[T]{.45\textwidth}
+            \begin{column}{.45\textwidth}
                 \begin{itemize}
                     \item Primary energy source for photosynthesis
                     \item Quality and intensity influence growth and development
@@ -139,153 +138,139 @@
     \begin{frame}
         \frametitle{Materials}
         \footnotesize
-        \begin{tabular}{l|l}
-            \hline
-            \hline
-            \textbf{Item} & \textbf{Description} \\
-            \hline
-            \hline
+        \begin{tabular}{ll}
+            Item & Description \\
+            \midrule
             Seeds               & 2 seeds of DUTCH PASSION Skywalker Haze (feminized) \\
                                 & 10 seeds of DUTCH PASSION Frisian Dew seeds (feminized) \\
-            \bigstrut
+            \addlinespace
             Planting containers & \qty[mode=text]{3}{\L} fabric planting containers from Chiliwelten with zipper \\
                                 & \qty[mode=text]{15}{\L} fabric planting containers from Chiliwelten with zipper \\
-            \bigstrut
+            \addlinespace
             Potting soil        & Lightly fertilized organic coconut potting soil \\
                                 & with added mycorrhizae (for seeds) \\
                                 & Fertilized organic coconut potting soil (for potting up) \\
-            \bigstrut
+            \addlinespace
             LED Grow lights     & PHLIZON FD6000 PLUS 640W Full-spectrum Daisy Chain \\
                                 & Dimmable LED Grow Light \\
-            \bigstrut
+            \addlinespace
             UV grow lights      & LuxElite PlantUV (fluorescent tube, \qty[mode=text]{24}{\W}, color temp. \qty[mode=text]{7000}{\K}) \\
                                 & \quad UV-A: \qty[mode=text]{30}{\percent} \\
                                 & \quad UV-B: \qty[mode=text]{12}{\percent} \\
-            \bigstrut
+            \addlinespace
             Light spectrometer  & THORLABS CCS200/M \\
                                 & \quad Wavelengths: \qtyrange[mode=text, range-phrase=\textendash, range-units=single]{200}{1000}{\nm} \\
-            \hline
-            \hline
         \end{tabular}
     \end{frame}
 
     \begin{frame}
         \frametitle{The cannabis seeds 'Skywalker Haze'}
-        \begin{figure}
-            \begin{subfigure}[t]{.48\textwidth}
+        \begin{columns}[T]
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{DUTCH-PASSION_Skywalker-Haze_1}
-            \end{subfigure}
-            \hfill
-            \begin{subfigure}[t]{.48\textwidth}
+            \end{column}
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{DUTCH-PASSION_Skywalker-Haze_2}
-            \end{subfigure}
-            \caption{DUTCH PASSION Skywalker Haze cultivar. From: \textcite{noauthor_dutch-passion_skywalker-haze_nodate}}
-        \end{figure}
+            \end{column}
+        \end{columns}
+        \captionof{figure}{From: \textcite{noauthor_dutch-passion_skywalker-haze_nodate}}
     \end{frame}
 
     \begin{frame}
         \frametitle{The cannabis seeds 'Frisian Dew'}
-        \begin{figure}
-            \begin{subfigure}[t]{.48\textwidth}
+        \begin{columns}[T]
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{DUTCH-PASSION_Frisian-Dew_1}
-            \end{subfigure}
-            \hfill
-            \begin{subfigure}[t]{.48\textwidth}
+            \end{column}
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{DUTCH-PASSION_Frisian-Dew_2}
-            \end{subfigure}
-            \caption{DUTCH PASSION Frisian Dew cultivar. From: \textcite{noauthor_dutch-passion_frisian-dew_nodate}}
-        \end{figure}
+            \end{column}
+        \end{columns}
+        \captionof{figure}{From: \textcite{noauthor_dutch-passion_frisian-dew_nodate}}
     \end{frame}
 
     \begin{frame}
         \frametitle{The planting containers}
-        \begin{figure}
-            \begin{subfigure}[t]{.48\textwidth}
+        \begin{columns}[T]
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{Chiliwelten_3L-Stofftopf-Reißverschluss}
-                \subcaption{\qty[mode=text]{3}{\L} planting container. From: \textcite{noauthor_chiliwelten_3l_nodate}}
-            \end{subfigure}
-            \hfill
-            \begin{subfigure}[t]{.48\textwidth}
+                \captionof{figure}{\qty[mode=text]{3}{\L} planting container. From: \textcite{noauthor_chiliwelten_3l_nodate}}
+            \end{column}
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{Chiliwelten_15L-Stofftopf-Reißverschluss}
-                \subcaption{\qty[mode=text]{15}{\L} planting container. From: \textcite{noauthor_chiliwelten_15l_nodate}}
-            \end{subfigure}
-        \end{figure}
+                \captionof{figure}{\qty[mode=text]{15}{\L} planting container. From: \textcite{noauthor_chiliwelten_15l_nodate}}
+            \end{column}
+        \end{columns}
     \end{frame}
 
     \begin{frame}
         \frametitle{The LED grow lights}
-        \begin{figure}
-            \begin{subfigure}[t]{.48\textwidth}
+        \begin{columns}[T]
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{PHLIZON_PH-FD8-E}
-            \end{subfigure}
-            \hfill
-            \begin{subfigure}[t]{.42\textwidth}
+            \end{column}
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{PHLIZON_PH-FD8-E_light-spectrum}
-            \end{subfigure}
-            \caption{LED grow light. From: \textcite{noauthor_phlizon_fd6000-640w-upgraded_nodate}}
-        \end{figure}
+            \end{column}
+        \end{columns}
+        \captionof{figure}{LED grow light. From: \textcite{noauthor_phlizon_fd6000-640w-upgraded_nodate}}
     \end{frame}
 
     \begin{frame}
         \frametitle{The UV grow lights}
-        \begin{figure}
-            \begin{subfigure}[t]{.48\textwidth}
+        \begin{columns}[T]
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{LuxElite_PlantUV}
-            \end{subfigure}
-            \hfill
-            \begin{subfigure}[t]{.48\textwidth}
+            \end{column}
+            \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{LuxElite_PlantUV_light-spectrum}
-            \end{subfigure}
-            \caption{UV grow light. From: \textcite{noauthor_luxelite_plantuv_nodate}}
-        \end{figure}
+            \end{column}
+        \end{columns}
+        \captionof{figure}{UV grow light. From: \textcite{noauthor_luxelite_plantuv_nodate}}
     \end{frame}
 
     \begin{frame}
         \frametitle{The light spectra}
-        \begin{figure}
-            \includegraphics[width=0.6\linewidth]{light-spectra_outdoors_indoors_led_led+uv}
-            \caption{Light spectra of the experimental setups with LED grow lights only (control) and with additional UV fluorescent tubes, as well as the spectra measured outdoors and indoors.}
-        \end{figure}
+        \includegraphics[width=0.45\linewidth]{light-spectra_outdoors_indoors_led_led+uv}
+        \captionof{figure}{\scriptsize Light spectra of the experimental setups with LED grow lights only (control) and with additional UV fluorescent tubes, as well as the spectra measured outdoors and indoors. The dark gray graph represents the outdoor spectrum, the light gray graph represents the indoor spectrum, the orange graph represents the LED-only spectrum, and the red graph represents the LED + UV spectrum. Differences in the intensities of the graphs are due to the measurement procedure and do not indicate actual differences in light intensities. The spectra reveal that the intensities of the UV lights are negligible compared to the LED grow lights.}
     \end{frame}
 
     \begin{frame}
         \frametitle{Experimental procedure}
-        \begin{figure}
-            \begin{tikzpicture}[node distance=1.6cm]
-                % Define styles
-                \tikzstyle{box_all_groups} = [font=\scriptsize , rectangle, draw, fill=gray!40, text width=12em, text centered, rounded corners, minimum height=2.85em]
-                \tikzstyle{box_ctrl_group} = [font=\scriptsize, rectangle, draw, fill=green!40, text width=12em, text centered, rounded corners, minimum height=2.85em]
-                \tikzstyle{box_exp_group} = [font=\scriptsize, rectangle, draw, fill=pink!40, text width=12em, text centered, rounded corners, minimum height=2.85em]
-                \tikzstyle{line} = [draw, -latex]
+        \begin{tikzpicture}[node distance=1.6cm]
+            % Define styles
+            \tikzstyle{box_all_groups} = [font=\scriptsize , rectangle, draw, fill=gray!40, text width=12em, text centered, rounded corners, minimum height=2.85em]
+            \tikzstyle{box_ctrl_group} = [font=\scriptsize, rectangle, draw, fill=green!40, text width=12em, text centered, rounded corners, minimum height=2.85em]
+            \tikzstyle{box_exp_group} = [font=\scriptsize, rectangle, draw, fill=pink!40, text width=12em, text centered, rounded corners, minimum height=2.85em]
+            \tikzstyle{line} = [draw, -latex]
 
-                % Nodes
-                \node [box_all_groups] (start) {Start: May 2};
+            % Nodes
+            \node [box_all_groups] (start) {Start: May 2};
 
-                \node [box_ctrl_group, below of=start] (ctrl_group_start) {Group 1 (Control): LED lights only};
-                \node [box_exp_group, right of=ctrl_group_start, node distance=6cm] (exp_group_start) {Group 2: LED + UV lights};
+            \node [box_ctrl_group, below of=start] (ctrl_group_start) {Group 1 (Control): LED lights only};
+            \node [box_exp_group, right of=ctrl_group_start, node distance=6cm] (exp_group_start) {Group 2: LED + UV lights};
 
-                \node [box_ctrl_group, below of=ctrl_group_start] (ctrl_group_seed) {Plant  1 seed of Skywalker Haze (feminized) and 5 seeds of Frisian Dew (feminized)};
-                \node [box_exp_group, below of=exp_group_start] (exp_group_seed) {Plant  1 seed of Skywalker Haze (feminized) and 5 seeds of Frisian Dew (feminized)};
+            \node [box_ctrl_group, below of=ctrl_group_start] (ctrl_group_seed) {Plant  1 seed of Skywalker Haze (feminized) and 5 seeds of Frisian Dew (feminized)};
+            \node [box_exp_group, below of=exp_group_start] (exp_group_seed) {Plant  1 seed of Skywalker Haze (feminized) and 5 seeds of Frisian Dew (feminized)};
 
-                \node [box_ctrl_group, below of=ctrl_group_seed] (ctrl_group_transplant) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
-                \node [box_exp_group, below of=exp_group_seed] (exp_group_transplant) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
+            \node [box_ctrl_group, below of=ctrl_group_seed] (ctrl_group_transplant) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
+            \node [box_exp_group, below of=exp_group_seed] (exp_group_transplant) {Transplant to \qty[mode=text]{15}{\L} pots on May 13};
 
-                \node [box_all_groups, ultra thick, below of=ctrl_group_transplant] (assess) {Assess growth parameters on June 17};
+            \node [box_all_groups, ultra thick, below of=ctrl_group_transplant] (assess) {Assess growth parameters on June 17};
 
-                % Lines
-                \path [line] (start) -- (ctrl_group_start);
-                \path [line] (start) -- (exp_group_start);
+            % Lines
+            \path [line] (start) -- (ctrl_group_start);
+            \path [line] (start) -- (exp_group_start);
 
-                \path [line] (ctrl_group_start) -- (ctrl_group_seed);
-                \path [line] (exp_group_start) -- (exp_group_seed);
+            \path [line] (ctrl_group_start) -- (ctrl_group_seed);
+            \path [line] (exp_group_start) -- (exp_group_seed);
 
-                \path [line] (ctrl_group_seed) -- (ctrl_group_transplant);
-                \path [line] (exp_group_seed) -- (exp_group_transplant);
+            \path [line] (ctrl_group_seed) -- (ctrl_group_transplant);
+            \path [line] (exp_group_seed) -- (exp_group_transplant);
 
-                \path [line] (ctrl_group_transplant) -- (assess);
-                \path [line] (exp_group_transplant) -- (assess);
-            \end{tikzpicture}
-        \end{figure}
+            \path [line] (ctrl_group_transplant) -- (assess);
+            \path [line] (exp_group_transplant) -- (assess);
+        \end{tikzpicture}
     \end{frame}
 
     \begin{frame}
@@ -433,48 +418,37 @@
     \begin{frame}
         \frametitle{Measured growth parameters}
         \footnotesize
-        \begin{tabular}{llcccc}
-            \hline
-            \hline
-            \textbf{Group} & \textbf{Cultivar} & \textbf{Plant \#} & \textbf{Height (\unit[mode=text]{\cm})} & \textbf{Stem cir. (\unit[mode=text]{\cm})} & \textbf{\#{}Internodes} \\
-            \hline
-            \hline
+        \begin{tabular}{llrrrr}
+            Group & Cultivar & Plant \# & Height (\unit[mode=text]{\cm}) & Stem cir. (\unit[mode=text]{\cm}) & \#{}Internodes \\
+            \midrule
             \multirow{6}{*}{UV} & Skywalker Haze & 1 & 49 & 4.3 & 11 \\
             & \multirow[t]{5}{*}{Frisian Dew} & 3 & 59 & 5.5 & 12 \\
             & & 5 & 56 & 5.5 & 12 \\
             & & 7 & 54 & 5.1 & 11 \\
             & & 9 & 56 & 5.5 & 12 \\
             & & 11 & 52 & 4.7 & 12 \\
-            \hline
+            \midrule
             \multirow{6}{*}{Control} & Skywalker Haze & 2 & 49 & 5.0 & 12 \\
             & \multirow[t]{5}{*}{Frisian Dew} & 4 & - & - & - \\
             & & 6 & 49 & 6.0 & 13 \\
             & & 8 & 60 & 5.5 & 12 \\
             & & 10 & 69 & 5.0 & 12 \\
             & & 12 & 52 & 5.8 & 12 \\
-            \hline
-            \hline
         \end{tabular}
     \end{frame}
 
     \begin{frame}
         \frametitle{Descriptive statistics}
         \footnotesize
-        \begin{table}
-            \caption{Mean and standard deviation of growth parameters for Frisian Dew cultivar}
-            \begin{tabular}{l|ll|ll|ll}
-                \hline
-                \hline
-                \textbf{Group} & \multicolumn{2}{l|}{\textbf{Height (\unit[mode=text]{\cm})}} & \multicolumn{2}{l|}{\textbf{Stem cir. (\unit[mode=text]{\cm})}} & \multicolumn{2}{l}{\textbf{\# Internodes}} \\
-                & \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} \\
-                \hline
-                \hline
-                UV & \num[mode=text]{55} & \num[mode=text]{2.6} & \num[mode=text]{5.3} & \num[mode=text]{0.36} & \num[mode=text]{12} & \num[mode=text]{0.45} \\
-                Control & \num[mode=text]{58} & \num[mode=text]{9.0} & \num[mode=text]{5.6} & \num[mode=text]{0.43} & \num[mode=text]{12} & \num[mode=text]{0.50} \\
-                \hline
-                \hline
-            \end{tabular}
-        \end{table}
+        \captionof{table}{Mean and standard deviation of growth parameters for Frisian Dew cultivar}
+        \begin{tabular}{lrrrrrr}
+            Group & \multicolumn{2}{l}{Height (\unit[mode=text]{\cm})} & \multicolumn{2}{l}{Stem cir. (\unit[mode=text]{\cm})} & \multicolumn{2}{l}{\# Internodes} \\
+            & Mean & SD & Mean & SD & Mean & SD \\
+            \midrule
+            UV & \num[mode=text]{55} & \num[mode=text]{2.6} & \num[mode=text]{5.3} & \num[mode=text]{0.36} & \num[mode=text]{12} & \num[mode=text]{0.45} \\
+            Control & \num[mode=text]{58} & \num[mode=text]{9.0} & \num[mode=text]{5.6} & \num[mode=text]{0.43} & \num[mode=text]{12} & \num[mode=text]{0.50} \\
+        \end{tabular}
+        \vfill
         \begin{figure}
             \begin{subfigure}[t]{.32\textwidth}
                 \includesvg[width=\linewidth]{../../results/boxplot_height_comparison}
@@ -490,33 +464,24 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Results of the statistical analysis}
-        \begin{footnotesize}
-            \begin{block}{Conducted tests: Welch's t-test for each growth parameter}
-                \begin{itemize}
-                    \item Only Frisian Dew cultivar due to insufficient sample size for Skywalker Haze
-                    \item Used to determine if there is a statistically significant difference between the means of two group
-                    \item Assumes that the groups are stochastically independent
-                    \item Data must be approximately normally distributed
-                    \item But the variance between the groups can be different
-                \end{itemize}
-            \end{block}
-            \begin{block}{Results: no significant differences between the UV and control groups}
-                \vspace{0.5em}
-                \begin{tabular}{lcc}
-                    \hline
-                    \hline
-                    \textbf{Parameter} & \textbf{t-value} & \textbf{p-value} \\
-                    \hline
-                    \hline
-                    Plant height & \num[mode=text]{-0.45} & \num[mode=text]{0.68} \\
-                    Stem cir. & \num[mode=text]{-1.17} & \num[mode=text]{0.29} \\
-                    \# Internodes & \num[mode=text]{-1.41} & \num[mode=text]{0.21} \\
-                    \hline
-                    \hline
-                \end{tabular}
-            \end{block}
-        \end{footnotesize}
+        \frametitle{Welch's t-test for each growth parameter}
+        \footnotesize
+        \begin{tabular}{lrr}
+            Parameter & t-value & p-value \\
+            \midrule
+            Plant height & \num[mode=text]{-0.45} & \num[mode=text]{0.68} \\
+            Stem cir. & \num[mode=text]{-1.17} & \num[mode=text]{0.29} \\
+            \# Internodes & \num[mode=text]{-1.41} & \num[mode=text]{0.21} \\
+        \end{tabular} \\
+        \vfill
+        \begin{itemize}
+            \item Only Frisian Dew cultivar due to insufficient sample size for Skywalker Haze
+            \item Used to determine if there is a statistically significant difference between the means of two group
+            \item Assumes that the groups are stochastically independent
+            \item Data must be approximately normally distributed
+            \item But the variance between the groups can be different
+        \end{itemize}
+        \em{Results: no significant differences between the UV and control groups}
     \end{frame}
 
     \section{Discussion}
