@@ -191,6 +191,7 @@
 
     \begin{frame}
         \frametitle{The planting containers}
+        \tiny
         \begin{columns}[T]
             \begin{column}{.45\textwidth}
                 \includegraphics[width=\linewidth]{Chiliwelten_3L-Stofftopf-Reißverschluss}
@@ -204,35 +205,42 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{The LED grow lights}
-        \begin{columns}[T]
-            \begin{column}{.45\textwidth}
+        \frametitle{The grow lights}
+        \begin{figure}
+            \begin{subfigure}[t]{.4\textwidth}
                 \includegraphics[width=\linewidth]{PHLIZON_PH-FD8-E}
-            \end{column}
-            \begin{column}{.45\textwidth}
-                \includegraphics[width=\linewidth]{PHLIZON_PH-FD8-E_light-spectrum}
-            \end{column}
-        \end{columns}
-        \captionof{figure}{LED grow light. From: \textcite{noauthor_phlizon_fd6000-640w-upgraded_nodate}}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{The UV grow lights}
-        \begin{columns}[T]
-            \begin{column}{.45\textwidth}
+                \subcaption{LED grow light. From: \textcite{noauthor_phlizon_fd6000-640w-upgraded_nodate}}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[t]{.4\textwidth}
                 \includegraphics[width=\linewidth]{LuxElite_PlantUV}
-            \end{column}
-            \begin{column}{.45\textwidth}
-                \includegraphics[width=\linewidth]{LuxElite_PlantUV_light-spectrum}
-            \end{column}
-        \end{columns}
-        \captionof{figure}{UV grow light. From: \textcite{noauthor_luxelite_plantuv_nodate}}
+                \subcaption{UV grow light. From: \textcite{noauthor_luxelite_plantuv_nodate}}
+            \end{subfigure}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
         \frametitle{The light spectra}
-        \includegraphics[width=0.45\linewidth]{light-spectra_outdoors_indoors_led_led+uv}
-        \captionof{figure}{\scriptsize Light spectra of the experimental setups with LED grow lights only (control) and with additional UV fluorescent tubes, as well as the spectra measured outdoors and indoors. The dark gray graph represents the outdoor spectrum, the light gray graph represents the indoor spectrum, the orange graph represents the LED-only spectrum, and the red graph represents the LED + UV spectrum. Differences in the intensities of the graphs are due to the measurement procedure and do not indicate actual differences in light intensities. The spectra reveal that the intensities of the UV lights are negligible compared to the LED grow lights.}
+        \begin{figure}
+            \begin{minipage}[t]{0.45\textwidth}
+                \begin{subfigure}[t]{\textwidth}
+                \includegraphics[width=\linewidth]{light-spectra_outdoors_indoors_led_led+uv}
+                \end{subfigure}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[b]{0.45\textwidth}
+                \begin{subfigure}[t]{0.55\textwidth}
+                    \includegraphics[width=\linewidth]{LuxElite_PlantUV_light-spectrum}
+                \end{subfigure}
+                \vfill
+                \begin{subfigure}[b]{0.55\textwidth}
+                    \includegraphics[width=0.8\linewidth]{PHLIZON_PH-FD8-E_light-spectrum}
+                \end{subfigure}
+            \end{minipage}
+            \caption{\scriptsize
+                Left: Light spectra of the experimental setups with LED grow lights only (control) and with additional UV fluorescent tubes, as well as the spectra measured outdoors and indoors. The dark gray graph represents the outdoor spectrum, the light gray graph represents the indoor spectrum, the orange graph represents the LED-only spectrum, and the red graph represents the LED + UV spectrum. Differences in the intensities of the graphs are due to the measurement procedure and do not indicate actual differences in light intensities. The spectra reveal that the intensities of the UV lights are negligible compared to the LED grow lights. \\ \vspace{0.5em}
+                Right: Advertised spectra of the LED and UV grow lights. From: \textcite{noauthor_luxelite_plantuv_nodate, noauthor_phlizon_fd6000-640w-upgraded_nodate}}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
@@ -288,7 +296,7 @@
 
     \begin{frame}
         \frametitle{The plants on May 13}
-        \begin{figure}[H]
+        \begin{figure}
             \begin{minipage}[t]{0.45\textwidth}
                 \begin{subfigure}[t]{.32\textwidth}
                     \includegraphics[width=\linewidth]{plant_01_2024-05-13}
@@ -341,7 +349,7 @@
 
     \begin{frame}
         \frametitle{The plants on June 17}
-        \begin{figure}[H]
+        \begin{figure}
             \begin{minipage}[t]{0.45\textwidth}
                 \begin{subfigure}[t]{.32\textwidth}
                     \includegraphics[width=\linewidth]{plant_01_2024-06-17}
@@ -398,7 +406,7 @@
 
     \begin{frame}
         \frametitle{The plants on June 17}
-        \begin{figure}[H]
+        \begin{figure}
             \begin{minipage}[t]{0.45\textwidth}
                 \begin{subfigure}[t]{0.99\textwidth}
                     \includegraphics[width=\linewidth]{plant_uv_2024-06-17}
